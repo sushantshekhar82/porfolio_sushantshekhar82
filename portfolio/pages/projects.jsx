@@ -19,7 +19,7 @@ function projects() {
             <div style={{display:"grid",gridTemplateColumns:"40% 40%",gap:"10px" }}>
             {
                 data2.map((e)=>(
-               <Link style={{textDecoration:"none"}}  href={e.html_url} target="_blank"><div style={{width:"350px",height:"auto",border:"1px solid gray"}}>
+               <Link style={{textDecoration:"none"}}  href={e.html_url} target="_blank"><div key={e.id} style={{width:"350px",height:"auto",border:"1px solid gray"}}>
                 <h2 style={{color:"black"}}>{e.name}</h2>
                 <h6 style={{color:"gray"}}>{e.full_name}</h6>
                 <p>Fork count :{e.forks_count}</p>
